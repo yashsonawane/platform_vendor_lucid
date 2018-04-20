@@ -53,3 +53,15 @@ LUCID_TARGET_ZIP := lucid-$(LUCID_BUILD)-Q-$(LUCID_VERSION)-$(shell date -u +%Y%
 
 # Props
 include vendor/lucid/configs/props.mk
+
+ifneq ($(HOST_OS),linux)
+ifneq ($(sdclang_already_warned),true)
+$(warning **********************************************)
+$(warning * SDCLANG is not supported on non-linux hosts.)
+$(warning **********************************************)
+sdclang_already_warned := true
+endif
+else
+# include definitions for SDCLANG
+include vendor/lucid/sdclang/sdclang.mk
+endif
