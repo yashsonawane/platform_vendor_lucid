@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit art options
+include vendor/lucid/configs/art.mk
+
 # Fonts
 include vendor/lucid/configs/fonts.mk
 
