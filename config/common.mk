@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/lucid/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/lucid/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/lucid/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/lucid/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
