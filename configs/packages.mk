@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
 # Lucid Packages
 PRODUCT_PACKAGES += \
     LucidLauncher \
+    Longshot \
     ThemePicker \
     LucidThemesStub \
     LucidSetupWizard
