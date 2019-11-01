@@ -28,7 +28,8 @@ PRODUCT_PACKAGES += \
 # Lucid Packages
 PRODUCT_PACKAGES += \
     LucidLauncher \
-    ThemePicker
+    ThemePicker \
+    LucidThemesStub
 
 # Offline charger
 PRODUCT_PACKAGES += \
