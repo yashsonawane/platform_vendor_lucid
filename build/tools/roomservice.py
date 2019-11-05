@@ -44,7 +44,7 @@ DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/lucid.xml"
-custom_default_revision = "queen-cake"
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'queen-cake')
 custom_dependencies = "lucid.dependencies"
 org_manifest = "lucid-devices"  # leave empty if org is provided in manifest
 org_display = "Lucid-Devices"  # needed for displaying
