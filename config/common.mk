@@ -12,14 +12,13 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/lucid/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/lucid/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/lucid/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
-    vendor/lucid/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/lucid/prebuilt/common/bin/50-base.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-base.sh
 
-ifeq ($(AB_OTA_UPDATER),true)
+ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
-    vendor/lucid/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/lucid/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/lucid/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/lucid/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/lucid/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/lucid/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
