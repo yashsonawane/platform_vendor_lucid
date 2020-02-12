@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Fonts
+include vendor/lucid/configs/fonts.mk
+
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/lucid/overlay
 
