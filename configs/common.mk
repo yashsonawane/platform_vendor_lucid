@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
+# Lucid Packages
+PRODUCT_PACKAGES += \
+    LucidLauncher
+
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
