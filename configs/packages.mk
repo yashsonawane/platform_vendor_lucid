@@ -31,6 +31,9 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     LucidThemesStub
 
+# Device Personalization Services
+PRODUCT_PACKAGES += MatchmakerPrebuilt
+
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
