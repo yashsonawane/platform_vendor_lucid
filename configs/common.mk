@@ -14,33 +14,14 @@
 # limitations under the License.
 #
 
-# Include support for additional filesystems
-PRODUCT_PACKAGES += \
-    e2fsck \
-    mke2fs \
-    tune2fs \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
-    ntfsfix \
-    ntfs-3g
-
-# Lucid Packages
-PRODUCT_PACKAGES += \
-    LucidLauncher \
-    ThemePicker \
-    LucidThemesStub
-
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Fonts
 include vendor/lucid/configs/fonts.mk
 
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/lucid/overlay
+
+# Packages
+include vendor/lucid/configs/packages.mk
 
 # World APN list
 PRODUCT_COPY_FILES += \
