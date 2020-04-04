@@ -23,6 +23,12 @@ DEVICE_PACKAGE_OVERLAYS += vendor/lucid/overlay
 # Packages
 include vendor/lucid/configs/packages.mk
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
+    vendor/lucid/configs/permissions/privapp-permissions-lucid-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lucid.xml \
+    vendor/lucid/configs/permissions/privapp-permissions-lucid-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lucid.xml
+
 # World APN list
 PRODUCT_COPY_FILES += \
     vendor/lucid/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
