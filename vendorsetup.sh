@@ -1,4 +1,4 @@
-devices=('cepheus' 'jasmine_sprout' 'phoenix' 'wayne')
+devices=('cepheus' 'jasmine_sprout' 'phoenix' 'wayne' 'z2_plus')
 
 function lunch_devices() {
     add_lunch_combo lucid_${device}-user
